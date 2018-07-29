@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> <!-- bean definitions here -->
+
+<bean id="carObj" class="com.niit.springdemo.Car" autowire="byType">
+	<!-- <constructor-arg index="0"><value>2018</value></constructor-arg> -->
+	<!-- <property name="vehicle" ref="id of vehicle bean">
+	</property> -->
+	<property name="modelNumber">
+		<value>2015</value>
+	</property>
+</bean>
+<bean id="vehicle" class="com.niit.springdemo.Vehicle" >
+	<property name="modelNumber">
+		<value>2018</value>
+	</property>
+</bean>
+</beans>
